@@ -28,11 +28,18 @@ The following figure illustrates the overall architecture of the Shopformer mode
   <figcaption><sub><b>Figure 1:</b> The proposed three-stage Frame-to-Event Transformation framework. Raw anomaly scores undergo hierarchical Gaussian smoothing to surpass high-frequency noise. Adaptive thresholds (τEER and τHprs ) are then applied to the smoothed signal to generate a binary output. Finally, a temporal refinement and short-event filter resolve fragmented detections to produce semantically coherent anomalous events (red boxes) aligned with human motion dynamics.</figcaption>
   </sub></figure>
 
-   ## Shopformer Architecture
+   ## Dual-Branch Reconstruction Event VAD
 The following figure illustrates the overall architecture of the Shopformer model:
 <figure>
-  <img src="Images/Shopformer.png" alt="Shopformer Architecture" width="1300"/>
-  <figcaption><sub><b>Figure 1:</b> Overview of the Shopformer architecture. The framework operates in two stages: (1) a Graph Convolutional Autoencoder is first trained on pose sequences to learn rich spatio-temporal representations; (2) the pretrained encoder is then repurposed as a tokenizer module, generating compact tokens from input pose data. These tokens are passed through a transformer encoder-decoder module, which reconstructs the input sequence. The reconstruction error (MSE loss) is used to compute the normality score for shoplifting detection.</figcaption>
+  <img src="Images/Shopformer.png" alt="branch event-level anomaly detection framework" width="1300"/>
+  <figcaption><sub><b>branch event-level anomaly detection framework. Given an input pose sequence, the model processes the data through two
+parallel branches: a Short Window Branch (SWB) with temporal length i and a Long Window Branch (LWB) with temporal length
+3i. Both branches share the same transformer-based reconstruction backbone [24], which jointly models absolute pose and relative pose
+through an encoder-decoder architecture. During inference, each branch produces frame-wise reconstruction errors. The center portion
+of the LWB error sequence is temporally aligned with the SWB target window, and the aligned frame-wise scores are fused to form a
+context-regularized anomaly response. The fused scores are then temporally pooled over the target window to produce a single event-level
+anomaly score.
+</figcaption>
   </sub></figure>
 
 ## Citation
