@@ -29,7 +29,7 @@ The following figure illustrates the overall architecture of the Shopformer mode
   </sub></figure>
 
    ## Dual-Branch Reconstruction Event VAD
-The following figure illustrates the overall architecture of the Shopformer model:
+The following figure illustrates the overall architecture of the Dual branch event-level anomaly detection framework:
 <figure>
   <img src="Images/Shopformer.png" alt="branch event-level anomaly detection framework" width="1300"/>
   <figcaption><sub><b>branch event-level anomaly detection framework. Given an input pose sequence, the model processes the data through two
