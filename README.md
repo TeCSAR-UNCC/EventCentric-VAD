@@ -20,10 +20,11 @@ Our event-centric analysis shows that the widely used SHT dataset contains micro
 
  [Cleaned ShanghaiTech testset]()
 
- ## Shopformer Architecture
+ ## The Score-Refinement Pipeline
+
 The following figure illustrates the overall architecture of the Shopformer model:
 <figure>
-  <img src="Images/Shopformer.png" alt="Shopformer Architecture" width="1300"/>
+  <img src="Images/Shopformer.png" alt="Pipeline" width="1300"/>
   <figcaption><sub><b>Figure 1:</b> The proposed three-stage Frame-to-Event Transformation framework. Raw anomaly scores undergo hierarchical Gaussian smoothing to surpass high-frequency noise. Adaptive thresholds (τEER and τHprs ) are then applied to the smoothed signal to generate a binary output. Finally, a temporal refinement and short-event filter resolve fragmented detections to produce semantically coherent anomalous events (red boxes) aligned with human motion dynamics.</figcaption>
   </sub></figure>
 
