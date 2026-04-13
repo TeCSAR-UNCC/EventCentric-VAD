@@ -15,3 +15,15 @@ We establish a foundation by auditing existing VAD datasets, SHT [19], CHAD [6],
 |            | Anomalous Frames   | 16,714  | 59,172 | 225,075 | 65,266  |
 | Event      | Anomalous Events   | 121     | 190    | 1,691   | 137     |
 |            | Avg. Duration (f)  | 138.13  | 311.43 | 133.10  | 476.39  |
+
+Our event-centric analysis shows that the widely used SHT dataset contains micro-events, which are anomalous sequences spanning only a few frames. These likely represent manual annotation noise rather than semantically meaningful human actions. We audited the SHT test set by cross-referencing binary masks with the original videos, filtering out these physically impossible events to ensure every anomaly aligns with actual human movement dynamics. This cleaned version of SHT can be downloded here.
+
+
+## Citation
+If you find our work useful, please consider citing: 
+
+
+## Contact
+If you have any questions or need assistance, please contact the authors at nrashvan@charlotte.edu.
+
+
