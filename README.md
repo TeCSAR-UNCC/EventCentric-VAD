@@ -20,6 +20,20 @@ Our event-centric analysis shows that the widely used SHT dataset contains micro
 
  [Cleaned ShanghaiTech testset]()
 
+ ## Shopformer Architecture
+The following figure illustrates the overall architecture of the Shopformer model:
+<figure>
+  <img src="Images/Shopformer.png" alt="Shopformer Architecture" width="1300"/>
+  <figcaption><sub><b>Figure 1:</b> The proposed three-stage Frame-to-Event Transformation framework. Raw anomaly scores undergo hierarchical Gaussian smoothing to surpass high-frequency noise. Adaptive thresholds (τEER and τHprs ) are then applied to the smoothed signal to generate a binary output. Finally, a temporal refinement and short-event filter resolve fragmented detections to produce semantically coherent anomalous events (red boxes) aligned with human motion dynamics.</figcaption>
+  </sub></figure>
+
+   ## Shopformer Architecture
+The following figure illustrates the overall architecture of the Shopformer model:
+<figure>
+  <img src="Images/Shopformer.png" alt="Shopformer Architecture" width="1300"/>
+  <figcaption><sub><b>Figure 1:</b> Overview of the Shopformer architecture. The framework operates in two stages: (1) a Graph Convolutional Autoencoder is first trained on pose sequences to learn rich spatio-temporal representations; (2) the pretrained encoder is then repurposed as a tokenizer module, generating compact tokens from input pose data. These tokens are passed through a transformer encoder-decoder module, which reconstructs the input sequence. The reconstruction error (MSE loss) is used to compute the normality score for shoplifting detection.</figcaption>
+  </sub></figure>
+
 ## Citation
 If you find our work useful, please consider citing: 
 
