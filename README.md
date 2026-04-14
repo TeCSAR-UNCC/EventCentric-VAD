@@ -8,14 +8,6 @@ We also establish a new evaluation protocol based on temporal IoU and event-leve
 ## Event-centric Characterization of VAD benchmarks
 We establish a foundation by auditing existing VAD datasets, SHT, CHAD, HuVAD, and NWPUC, from an event-centric perspective.
 
-<sub> Table: Frame-level and event-level statistics of VAD benchmarks.
-| Granularity | Characteristic      | SHT     | CHAD   | HuVAD   | NWPUC  |
-|------------|--------------------|---------|--------|---------|--------|
-| Frame      | Normal Frames      | 24,077  | 67,303 | 694,415 | 318,793 |
-|            | Anomalous Frames   | 16,714  | 59,172 | 225,075 | 65,266  |
-| Event      | Anomalous Events   | 121     | 190    | 1,691   | 137     |
-|            | Avg. Duration (f)  | 138.13  | 311.43 | 133.10  | 476.39  |
-
 <sub>Table: Frame-level and event-level statistics of VAD benchmarks.</sub>
 
 <table>
