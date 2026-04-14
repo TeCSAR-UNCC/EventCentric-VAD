@@ -81,6 +81,11 @@ The following figure illustrates the overall architecture of our Frame-to-Event 
   <figcaption><sub><b>Figure 1:</b> The proposed three-stage Frame-to-Event Transformation framework. Raw anomaly scores undergo hierarchical Gaussian smoothing to surpass high-frequency noise. Adaptive thresholds (τEER and τHprs ) are then applied to the smoothed signal to generate a binary output. Finally, a temporal refinement and short-event filter resolve fragmented detections to produce semantically coherent anomalous events (red boxes) aligned with human motion dynamics.</figcaption>
   </sub></figure>
 
+To apply this pipeline:
+- Train your video anomaly detection model and save the results as CSV files containing ground truth labels, frame-level anomaly scores.
+- Run `Refinement_pipeline.py` to apply the three-stage refinement process and extract event-level predictions
+- Use metrics.py to evaluate the event-level performance.
+
  ## Dual-Branch Reconstruction Event VAD
 The following figure illustrates the overall architecture of the Dual branch event-level anomaly detection framework:
 <figure>
