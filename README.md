@@ -90,7 +90,7 @@ To apply this pipeline:
 The following figure illustrates the overall architecture of the Dual branch event-level anomaly detection framework:
 <figure>
   <img src="Images/dual_branch.png" alt="Dual branch event-level anomaly detection framework" width="1300"/>
-  <figcaption><sub><b>branch event-level anomaly detection framework. Given an input pose sequence, the model processes the data through two
+  <figcaption><sub><b>Figure 2:</b>Dual branch event-level anomaly detection framework. Given an input pose sequence, the model processes the data through two
 parallel branches: a Short Window Branch (SWB) with temporal length i and a Long Window Branch (LWB) with temporal length
 3i. Both branches share the same transformer-based reconstruction backbone [24], which jointly models absolute pose and relative pose
 through an encoder-decoder architecture. During inference, each branch produces frame-wise reconstruction errors. The center portion
