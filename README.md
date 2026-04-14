@@ -5,7 +5,7 @@ We propose an event-centric framework that focuses on detecting coherent anomalo
 
 We also establish a new evaluation protocol based on temporal IoU and event-level F1 metrics, revealing a significant gap between frame-level accuracy and true event-level performance across standard VAD benchmarks
 
-###Event-centric Characterization of VAD benchmarks
+## Event-centric Characterization of VAD benchmarks
 We establish a foundation by auditing existing VAD datasets, SHT, CHAD, HuVAD, and NWPUC, from an event-centric perspective.
 
 <sub> Table: Frame-level and event-level statistics of VAD benchmarks.
