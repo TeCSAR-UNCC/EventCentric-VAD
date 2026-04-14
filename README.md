@@ -8,18 +8,16 @@ We also establish a new evaluation protocol based on temporal IoU and event-leve
 ## Key Features
 - Event-centric reformulation of VAD evaluation
   
-- First tIoU-based event-level benchmark for anomaly detection
+- First tIoU-based event-level benchmark for pose-based video anomaly detection (VAD)
 
-- Reveals large gap between frame-level and real-world performance
+- Reveals large gap between frame-level and event-level (real-world) performance
   
 - Score-refinement pipeline for frame-to-event transformation
   
 - Dual-branch transformer for direct event-level detection
   
-- Benchmark audit + cleaned dataset (SHT)
+- Benchmark audit + cleaned ShanghaiTech dataset
   
-- Privacy-preserving pose-based modeling
-
 
 ## Event-centric Characterization of VAD benchmarks
 We establish a foundation by auditing existing VAD datasets, SHT, CHAD, HuVAD, and NWPUC, from an event-centric perspective.
