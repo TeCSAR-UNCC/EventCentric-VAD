@@ -6,13 +6,19 @@ We propose an event-centric framework that focuses on detecting coherent anomalo
 We also establish a new evaluation protocol based on temporal IoU and event-level F1 metrics, revealing a significant gap between frame-level accuracy and true event-level performance across standard VAD benchmarks.
 
 ## Key Features
--Event-centric reformulation of VAD evaluation
--First tIoU-based event-level benchmark for anomaly detection
--Reveals large gap between frame-level and real-world performance
--Score-refinement pipeline for frame-to-event transformation
--Dual-branch transformer for direct event-level detection
--Benchmark audit + cleaned dataset (SHT)
--Privacy-preserving pose-based modeling
+- Event-centric reformulation of VAD evaluation
+  
+- First tIoU-based event-level benchmark for anomaly detection
+
+- Reveals large gap between frame-level and real-world performance
+  
+- Score-refinement pipeline for frame-to-event transformation
+  
+- Dual-branch transformer for direct event-level detection
+  
+- Benchmark audit + cleaned dataset (SHT)
+  
+- Privacy-preserving pose-based modeling
 
 
 ## Event-centric Characterization of VAD benchmarks
