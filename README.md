@@ -28,7 +28,7 @@ The following figure illustrates the overall architecture of our Frame-to-Event 
   <figcaption><sub><b>Figure 1:</b> The proposed three-stage Frame-to-Event Transformation framework. Raw anomaly scores undergo hierarchical Gaussian smoothing to surpass high-frequency noise. Adaptive thresholds (τEER and τHprs ) are then applied to the smoothed signal to generate a binary output. Finally, a temporal refinement and short-event filter resolve fragmented detections to produce semantically coherent anomalous events (red boxes) aligned with human motion dynamics.</figcaption>
   </sub></figure>
 
-   ## Dual-Branch Reconstruction Event VAD
+ ## Dual-Branch Reconstruction Event VAD
 The following figure illustrates the overall architecture of the Dual branch event-level anomaly detection framework:
 <figure>
   <img src="Images/Shopformer.png" alt="branch event-level anomaly detection framework" width="1300"/>
