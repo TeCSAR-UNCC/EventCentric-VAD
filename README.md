@@ -16,6 +16,53 @@ We establish a foundation by auditing existing VAD datasets, SHT, CHAD, HuVAD, a
 | Event      | Anomalous Events   | 121     | 190    | 1,691   | 137     |
 |            | Avg. Duration (f)  | 138.13  | 311.43 | 133.10  | 476.39  |
 
+<sub>Table: Frame-level and event-level statistics of VAD benchmarks.</sub>
+
+<table>
+  <thead>
+    <tr>
+      <th>Granularity</th>
+      <th>Characteristic</th>
+      <th>SHT</th>
+      <th>CHAD</th>
+      <th>HuVAD</th>
+      <th>NWPUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2"><b>Frame</b></td>
+      <td>Normal Frames</td>
+      <td>24,077</td>
+      <td>67,303</td>
+      <td>694,415</td>
+      <td>318,793</td>
+    </tr>
+    <tr>
+      <td>Anomalous Frames</td>
+      <td>16,714</td>
+      <td>59,172</td>
+      <td>225,075</td>
+      <td>65,266</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>Event</b></td>
+      <td>Anomalous Events</td>
+      <td>121</td>
+      <td>190</td>
+      <td>1,691</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td>Avg. Duration (f)</td>
+      <td>138.13</td>
+      <td>311.43</td>
+      <td>133.10</td>
+      <td>476.39</td>
+    </tr>
+  </tbody>
+</table>
+
 Our event-centric analysis shows that the widely used SHT dataset contains micro-events, which are anomalous sequences spanning only a few frames. These likely represent manual annotation noise rather than semantically meaningful human actions. We audited the SHT test set by cross-referencing binary masks with the original videos, filtering out these physically impossible events to ensure every anomaly aligns with actual human movement dynamics. This cleaned version of SHT can be downloded here.
 
  [Cleaned ShanghaiTech testset]()
