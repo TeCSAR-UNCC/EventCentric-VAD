@@ -84,7 +84,7 @@ The following figure illustrates the overall architecture of our Frame-to-Event 
 To apply this pipeline:
 - Train your video anomaly detection model and save the results as CSV files containing ground truth labels, frame-level anomaly scores.
 - Run `Refinement_pipeline.py` to apply the three-stage refinement process and extract event-level predictions
-- Use metrics.py to evaluate the event-level performance.
+- Use Metrics_calculation.py to evaluate the event-level performance.
 
  ## Dual-Branch Reconstruction Event VAD
 The following figure illustrates the overall architecture of the Dual branch event-level anomaly detection framework:
