@@ -71,7 +71,7 @@ We establish a foundation by auditing existing VAD datasets, SHT, CHAD, HuVAD, a
 
 Our event-centric analysis shows that the widely used SHT dataset contains micro-events, which are anomalous sequences spanning only a few frames. These likely represent manual annotation noise rather than semantically meaningful human actions. We audited the SHT test set by cross-referencing binary masks with the original videos, filtering out these physically impossible events to ensure every anomaly aligns with actual human movement dynamics. This cleaned version of SHT can be downloded here.
 
- [Cleaned ShanghaiTech testset]()
+ [Cleaned ShanghaiTech testset](https://drive.google.com/file/d/1pXo2akh62dOGnHC2bk1qxsb455dcx_CW/view?usp=sharing)
 
  ## The Score-Refinement Pipeline
 
