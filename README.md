@@ -82,7 +82,7 @@ The following figure illustrates the overall architecture of our Frame-to-Event 
   </sub></figure>
 
 To apply this pipeline:
-- Train your video anomaly detection model and save the results as CSV files containing ground truth labels, frame-level anomaly scores.
+- Train your video anomaly detection model and save the results as CSV files containing ground truth labels and frame-level anomaly scores.
 - Run `Refinement_pipeline.py` to apply the three-stage refinement process and extract event-level predictions
 - Use `Metrics_calculation.py` to evaluate the event-level performance.
 
