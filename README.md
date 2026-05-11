@@ -102,7 +102,12 @@ anomaly score.
 
 ## Citation
 If you find our work useful, please consider citing: 
-
+@article{rashvand2026frames,
+  title={From Frames to Events: Rethinking Evaluation in Human-Centric Video Anomaly Detection},
+  author={Rashvand, Narges and Yao, Shanle and Pazho, Armin Danesh and Ardabili, Babak Rahimi and Tabkhi, Hamed},
+  journal={arXiv preprint arXiv:2604.09327},
+  year={2026}
+}
 
 ## Contact
 If you have any questions or need assistance, please contact the authors at nrashvan@charlotte.edu.
